@@ -1,0 +1,30 @@
+<configuration>
+    <contextName>tesla-kafka-appender</contextName>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <append>true</append>
+        <encoder>
+            <pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{15} - %m%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <appender name="kafka" class="com.github.danielwegener.logback.kafka.KafkaAppender">
+        <encoder class="com.github.danielwegener.logback.kafka.encoding.PatternLayoutKafkaMessageEncoder">
+            <layout class="net.logstash.logback.layout.LogstashLayout">
+                <customFields>
+                    {"HOSTNAME":"${HOST}"}
+                </customFields>
+            </layout>
+        </encoder>
+
+        <topic>logstash</topic>
+        <producerConfig>bootstrap.servers=${KAFKA_LOGGING_HOSTS}</producerConfig>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="kafka"/>
+        <appender-ref ref="console"/>
+    </root>
+
+</configuration>
