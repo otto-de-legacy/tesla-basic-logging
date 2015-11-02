@@ -1,10 +1,15 @@
 <configuration>
-    <contextName>tesla-kafka-appender</contextName>
+    <contextName>tesla-basic-logging-example</contextName>
 
-    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+   <conversionRule conversionWord="mescaped"
+                       converterClass="de.otto.util.escapingmessageconverter" />
+
+    
+
+   <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <append>true</append>
         <encoder>
-            <pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{15} - %m%n</pattern>
+            <pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{15} - %mescaped%n</pattern>
         </encoder>
     </appender>
 
