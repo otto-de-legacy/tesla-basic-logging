@@ -1,4 +1,4 @@
-(defproject de.otto/tesla-basic-logging "0.1.4"
+(defproject de.otto/tesla-basic-logging "0.1.5"
   :description "dependencies for logging to kafka using logback"
   :url "https://github.com/otto-de/tesla-kafka-logging"
    :license {:name "Apache License 2.0"
