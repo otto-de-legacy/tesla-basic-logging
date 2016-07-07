@@ -7,8 +7,8 @@ This is to save us the hassle of including and maintaining several dependencies 
 
 `[de.otto/tesla-basic-logging "0.1.5"]`
 
-[![Build Status](https://travis-ci.org/otto-de/tesla-kafka-logging.svg)](https://travis-ci.org/otto-de/tesla-kafka-logging)
-[![Dependencies Status](http://jarkeeper.com/otto-de/tesla-kafka-logging/status.svg)](http://jarkeeper.com/otto-de/tesla-kafka-logging)
+[![Build Status](https://travis-ci.org/otto-de/tesla-basic-logging.svg)](https://travis-ci.org/otto-de/tesla-basic-logging)
+[![Dependencies Status](http://jarkeeper.com/otto-de/tesla-basic-logging/status.svg)](http://jarkeeper.com/otto-de/tesla-basic-logging)
 
 ## Configuration
 
