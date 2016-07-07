@@ -15,4 +15,4 @@ This is to save us the hassle of including and maintaining several dependencies 
 See `./resources/logback.xml` for an example config that assumes `$HOST` and `$KAFKA_LOGGING_HOSTS` are defined and that logs to both, kafka and console. 
 
 ## License
-Apache License
+Released under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.
